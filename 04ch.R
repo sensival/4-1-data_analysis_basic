@@ -7,7 +7,6 @@ a <- scan("")
 print(a)
 
 b <- readline("")
-hi hycu!
 
 print(b)
 
@@ -48,7 +47,6 @@ Sys.Date() - date1
 
 # 논리, 숫자, 문자 형변환 ###
 temp2 <- as.logical("string") # 문자열 로지컬 안됨
-
 temp3 <- as.logical("T")
 temp4 <- as.logical("F")
 temp3 <- as.logical("T")
@@ -58,7 +56,16 @@ temp7 <- as.logical("TRUE")
 temp8 <- as.logical("FALSE")
 temp9 <- as.logical("true")
 temp10 <- as.logical("false")
-paste(temp3, temp4, temp5, temp6, temp7, temp8, temp9, temp10 ) # 논리나타내는 문자들만 가능
+paste(temp3, temp4, temp5, temp6, temp7, temp8, temp9, temp10 ) # 논리나타내는 문자들만 가능(1, 0도 안됨)
+str1<-"hi"
+str2<-"Hi"
+str1==str2 #false
+num_1 <- 0
+num_2 <- 10
+log_1 <- as.logical(num_1)
+log_2 <- as.logical(num_2)
+as.numeric(log_1)
+as.numeric(log_2) #다시 10으로 바뀌지 않음, 대입은 안됨
 
 
 #벡터 자료형####
