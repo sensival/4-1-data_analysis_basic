@@ -10,6 +10,9 @@ print(test2)
 a <- c(1,3,5)
 b <- c(2,0,-2)
 a/b # 0으로 나누면 Inf
+print(a-10)
+print(a^2)
+
 
 c <- c(1,2,3)
 d <- c(4,5,6,7,8)
@@ -34,7 +37,8 @@ score[score>=mean(score)]
 score[score>=90]
 score[score<=mean(score)]<--1 # true만 -1로 변경
 print(score)
-
+score<=mean(score)
+# 이렇게 하면 T/F만
 
 # 집합
 x <- c(1,2,3,4,4)
@@ -44,10 +48,12 @@ setdiff(x, y)
 union(x, y)
 
 # 결측치
-a<-c(1,2,NA,5,8)
+a<-c(1,2,NA,5,NA)
 mean(a) # 결측치있으면 NA로 나옴
-av=mean(a, na.rm=T) # na.rm=T로 결측치 빼고
+av<-mean(a, na.rm=T) # na.rm=T로 결측치 빼고
 a[3] <- av
+a[is.na(a)] <- av
+a
 
 # 평균, 분산, 중앙값, cumsum
 b <-  c(90, 80,100,100, 99)
@@ -60,4 +66,9 @@ median(b)
 sales <- c(100,99,88,100,100)
 names(sales)<- c('1','2','3','4','5')
 cumsum(sales)
+sort(b) #오름차순
+cummin(b)
+cummax(b)
+
+
 
