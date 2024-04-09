@@ -52,8 +52,8 @@ a<-c(1,2,NA,5,NA)
 mean(a) # 결측치있으면 NA로 나옴
 av<-mean(a, na.rm=T) # na.rm=T로 결측치 빼고
 a[3] <- av
-a[is.na(a)] <- av
-a
+
+
 
 # 평균, 분산, 중앙값, cumsum
 b <-  c(90, 80,100,100, 99)
