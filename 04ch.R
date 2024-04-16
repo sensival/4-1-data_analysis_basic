@@ -49,7 +49,7 @@ Sys.Date() - date1
 temp2 <- as.logical("string") # 문자열 로지컬 안됨
 temp3 <- as.logical("T")
 temp4 <- as.logical("F")
-temp3 <- as.logical("T")
+temp3 <- as.logical("T") 
 temp5 <- as.logical("True")
 temp6 <- as.logical("False")
 temp7 <- as.logical("TRUE")

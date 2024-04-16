@@ -37,13 +37,13 @@ rowSums(mat1)
 # 인덱싱 ####
 a<-matrix(1:12, nrow=3)
 a<-a[,-c(1,3)] # 열삭제
-
+mat1[2,2,drop=F]# 인덱싱시 drop은 3번째
 
 # 필터링 ####
-a[a%%2==0, drop=F]
+a[a%%2==0]
 mat1<-matrix(1:6, ncol = 3, byrow=T)
-mat1[mat1[,3]>3,,drop=F]#3열의 값이 3보다 큰 걸 가지고 있는 행 필터링
-mat1[mat1[,2]==2,,drop=F]#2열의 값이 2인걸 가지고 있는 행 필터링
+mat1[mat1[,3]>3,,drop=F]#3열의 값이 3보다 큰 걸 가지고 있는 행 필터링, drop 3번째인수
+mat1[mat1[,2]==2,drop=F]#2열의 값이 2인걸 가지고 있는 행 필터링, drop 3번째인수
 
 # 배열####
 a <- array(1:12, dim=c(3,2,2))
