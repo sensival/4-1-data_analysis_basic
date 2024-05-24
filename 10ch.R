@@ -2,6 +2,7 @@
 df<-data.frame(no=c(1:5),names=c("K","L","P","C","Y"), score1=c(100,NA,80,70,60),score2=c(100,90,80,70,60))
 mean(df$score1) #NA
 mean(df$score1, na.rm=T) #NA
+sd(df$score1, na.rm=T) #NA
 #df[is.na(df$score1),]<-mean(df$score1, na.rm=T) # 이렇게하면 행 다바뀜
 df[is.na(df$score1),"score1"]<-mean(df$score1, na.rm=T) # 이렇게 열도 지정함
 df
@@ -21,6 +22,7 @@ table(is.na(a))
 na.omit(a)
 which(is.na(a),T) # 행/열 정확히 알려달라->T
 which(is.na(a)) # 결측치 행만 리턴 -> F (디폴트)
+complete.cases(a)
 
 
 # 결측치 처리2 ####
@@ -34,7 +36,7 @@ data("airquality")
 str(airquality)
 head(airquality)
 sum(is.na(airquality))
-table(is.na(airquality))
+
 colMeans(airquality)
 colMeans(airquality, na.rm=T)
 
@@ -80,7 +82,10 @@ str(temp)
 complete.cases()
 sum(is.na(Cars93))
 # Cars93 데이터 프레임의 “Rear.seat.room" 칼럼 내 결측값이 있는 행 전체 삭제해 봅시다
-Cars93_2 <- Cars93[ complete.cases(Cars93[ , c("Rear.seat.room")]), ]
+sum(is.na(Cars93))
+Cars93_1 <- Cars93[ complete.cases(Cars93[ , c("Rear.seat.room")]), ]
+sum(is.na(Cars93_1)) 
+Cars93_2 <- Cars93[ complete.cases(Cars93[ , "Rear.seat.room"]), ]
 sum(is.na(Cars93_2)) 
 # Cars93 데이터 프레임의 20~24번째 칼럼 내 결측값이 있는 행 전체 삭제>
 Cars93_3 <- Cars93[ complete.cases(Cars93[ , c(20:24)]), ]
