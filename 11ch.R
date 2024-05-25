@@ -34,6 +34,18 @@ calcul<-function(a,b){
 }
 calcul(1,2)
 
+# 변수 ####
+a<-1;b<-2;c<-3;
+t<-function(a,b,c){
+  a<-10
+  b<-20
+  c<-30
+  cat(a,b,c)
+}
+t(a,b,c)
+cat(a,b,c)
+
+
 
 # 조건문 ####
 # 홀수짝수
@@ -48,15 +60,21 @@ if(a%%2==0){
 # 10만원 이상 : 골드 / 5만원 이상 : 실버 / 이외 : 브론즈
 item<-100000
 if(item>=100000){
-  print("골드")}
-else if(item>=50000){
-  print("실버")}
-else{
+  print("골드")
+
+}else if(item>=50000){
+  print("실버")
+  
+}else{
   print("브론즈")}
 
-#ifelse
+# ifelse
 a<-10
-ifelse(a%%2==0,"even","odd“)
+ifelse(a%%2==0,"even","odd")
+
+tmp<-1:10
+ifelse(tmp< 5, "5미만", ifelse(tmp< 8, "8미만", "8이상"))
+
 
 
 # 반복문 ####
