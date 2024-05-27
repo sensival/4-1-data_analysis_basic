@@ -50,6 +50,7 @@ a%>%filter(mid>=25 & final>=25 & attend==20)
 # 원하는 열만 읽기 select ####
 a%>% select(1:3) #열 범위만 제시(인덱싱방법과 같음 )
 a%>% select(-1:-3)
+a%>% select([1,1])
 a%>%filter(mid>=25)%>%select(c(1,3))
 a%>%filter(quiz>=15)%>% select(1:4)
 
@@ -60,13 +61,14 @@ a%>% arrange(desc(final))
 # 중복값 제거 ####
 a%>% distinct(name)
 a%>% distinct(dept)
+a%>% distinct(dept, name)
 # dept의 중복을 제거하고 난 후 데이터 프레임 출력 .붙이는것주의 앞에 나온값만 출력
-a%>% distinct(dept, .keep_all=T)
+a%>% distinct(dept, name, .keep_all=T)
 a%>%distinct() #행전체가 중복인 경우만 적용됨
 
 # 샘플링 ####
 a %>% sample_n(2)
-a%>% sample_frac(0.3)
+a%>% sample_frac(0.4)
 
 # groupby summarize ####
 # dept를 기준으로 quiz의 mean를구하기
@@ -74,6 +76,17 @@ a%>% group_by(dept) %>% summarize(mean(quiz))
 # dept를 기준으로 quiz의 mean과final의 sum을 구하기
 a%>% group_by(dept) %>% summarize(q_mean=mean(quiz),f_sum= sum(final))
 # <chr>   <dbl> <int> 는 열 타입 문자, 실수, 정수
+a %>% mutate(total=quiz+mid+final+attend)
+a
+
+a_df<-data.frame(name=c('kim','lee','oh','hong','kang1'),
+                 dept=c('sw','comp','de','sw','sw'),
+                 R_score=c(99,80,88,100,100),
+                 Python_score=c(100,90,100,100,100)
+)
+a_df %>% group_by(dept) %>% summarize(mean(R_score))
+a_df %>% group_by(dept) %>% summarize(R_mean=mean(R_score),Py_mean=mean(Python_score))
+a_df %>% mutate(total=R_score+Python_score, avg=(R_score+Python_score)/2);a_df
 
 # 조인 ####
 a<-read.csv("1.csv")
