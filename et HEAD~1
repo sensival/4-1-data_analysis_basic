@@ -1,0 +1,89 @@
+[33mcommit c0f1fb54384ab386383f4d5ad420e434e7dd1c94[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: sensival <alstjs883@naver.com>
+Date:   Wed May 29 22:34:31 2024 +0900
+
+    시각화
+
+[33mcommit f0a35742bd2dc055efc5097450e59b008f955a1e[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: sensival <alstjs883@naver.com>
+Date:   Sun May 26 16:17:48 2024 +0900
+
+    시각화
+
+[33mcommit 09e3485bf596110ecdfd5f776ec889d1487b0bf3[m
+Author: sensival <alstjs883@naver.com>
+Date:   Wed May 15 00:03:07 2024 +0900
+
+    dplyr
+
+[33mcommit 79add2ace6f20c12dda9ef6c7ebc3abc46e8bbab[m
+Author: sensival <alstjs883@naver.com>
+Date:   Thu May 9 16:16:31 2024 +0900
+
+    사용자 정의 함수, 조건문과 반복문
+
+[33mcommit d485fd6c819c327df982fa7e52a80b81a0d83750[m
+Author: sensival <alstjs883@naver.com>
+Date:   Fri May 3 23:03:42 2024 +0900
+
+     결측치 처리
+
+[33mcommit 13e46712d03b6ac448e769591623895a739006b8[m
+Author: sensival <alstjs883@naver.com>
+Date:   Mon Apr 29 17:38:11 2024 +0900
+
+    데이터프레임
+
+[33mcommit 6c4077e237f2c1e6b15f8b49d0b6a8ab6d536ef4[m
+Author: sensival <alstjs883@naver.com>
+Date:   Tue Apr 16 19:40:03 2024 +0900
+
+    행렬
+
+[33mcommit 2d8dc9b221a6cbedfbeffd8b45fa22ab8dcd7ad7[m
+Author: sensival <alstjs883@naver.com>
+Date:   Wed Apr 10 11:07:51 2024 +0900
+
+    행렬/배열
+
+[33mcommit 15b8ada88e220322bf586547a2663a33353d7f74[m
+Author: sensival <alstjs883@naver.com>
+Date:   Tue Apr 9 23:16:48 2024 +0900
+
+    행렬/배열
+
+[33mcommit a7def59aa0c3ce0eb96ba69be052b864281b2bbd[m
+Author: sensival <alstjs883@naver.com>
+Date:   Thu Apr 4 22:05:33 2024 +0900
+
+    벡터 자료형
+
+[33mcommit b8213f59ab2c9323e3d3a12d44511238a7cfb092[m
+Author: sensival <alstjs883@naver.com>
+Date:   Thu Apr 4 22:05:01 2024 +0900
+
+    리스트와 팩터
+
+[33mcommit 423660ce0ebfcabf87332fd8fcc38192f40ac901[m
+Author: sensival <alstjs883@naver.com>
+Date:   Tue Mar 26 16:23:26 2024 +0900
+
+    vector 자료형
+
+[33mcommit 7309fa66f1e81d5343f43308ccbc735cd292f27a[m
+Author: sensival <alstjs883@naver.com>
+Date:   Thu Mar 21 21:33:20 2024 +0900
+
+    입출력함수/자료형
+
+[33mcommit 7a82dad261ce78e8e8372e19e2ffed7be3bcb729[m
+Author: sensival <alstjs883@naver.com>
+Date:   Tue Mar 12 22:34:59 2024 +0900
+
+    변수와 연산자
+
+[33mcommit c2210867799a40c9fa55ff8ab5aa1dda88937cd3[m
+Author: sensival <alstjs883@naver.com>
+Date:   Fri Mar 8 23:05:52 2024 +0900
+
+    1차시
